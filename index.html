@@ -167,7 +167,7 @@ Email, text, call. Additionally, you can fill out the form below, and submit it!
 <form action="https://formsubmit.co/amanda.doggett@stonybrook.edu" method="POST">
 
     <label for="f/lname">First/Last Name</label>
-    <input type="text" id="f/lname" name="first/lastname" placeholder="Your name..">
+    <input type="text" id="f/lname" name="first/lastname" placeholder="Your name.." required>
 
     <label for="town">Town</label>
     <input type="text" id="town" name="town" placeholder="You live in...">
@@ -176,10 +176,10 @@ Email, text, call. Additionally, you can fill out the form below, and submit it!
     <input type="text" id="phonenumber" name="phonenumber" placeholder="So we can reach you back! ...">
 
     <label for="Email">Email</label>
-    <input type="text" id="email" name="phonenumber" placeholder="So we can reach you back! ...">
+    <input type="text" id="email" name="email" placeholder="So we can reach you back! ...">
 
     <label for="subject">Tell us more! How can we help specifically?</label>
-    <textarea id="subject" name="subject" placeholder="~ Elevator music ~..." style="height:200px"></textarea>
+    <textarea id="subject" name="subject" placeholder="~ Elevator music ~..." style="height:200px" required></textarea>
 
     <input type="submit" value="Submit">
 <input type="hidden" name="_captcha" value="false">
