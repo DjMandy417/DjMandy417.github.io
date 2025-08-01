@@ -164,7 +164,7 @@ Email, text, call. Additionally, you can fill out the form below, and submit it!
 <div class="form-box"> 
     <h2> Help Request Form: </h2>
 <div class="container">
-  <form action="action_page.php">
+<form action="https://formsubmit.co/amanda.doggett@stonybrook.edu" method="POST">
 
     <label for="f/lname">First/Last Name</label>
     <input type="text" id="f/lname" name="first/lastname" placeholder="Your name..">
@@ -172,13 +172,17 @@ Email, text, call. Additionally, you can fill out the form below, and submit it!
     <label for="town">Town</label>
     <input type="text" id="town" name="town" placeholder="You live in...">
 
-    <label for="">Phone Number/Email</label>
+    <label for="Phone">Phone Number</label>
     <input type="text" id="phonenumber" name="phonenumber" placeholder="So we can reach you back! ...">
+
+    <label for="Email">Email</label>
+    <input type="text" id="email" name="phonenumber" placeholder="So we can reach you back! ...">
 
     <label for="subject">Tell us more! How can we help specifically?</label>
     <textarea id="subject" name="subject" placeholder="~ Elevator music ~..." style="height:200px"></textarea>
 
     <input type="submit" value="Submit">
+<input type="hidden" name="_captcha" value="false">
 
   </form>
 </div>
@@ -187,7 +191,7 @@ Email, text, call. Additionally, you can fill out the form below, and submit it!
 <div class="form-box">
     <h2> Join Our Club:</h2>
 <div class="container">
-  <form action="action_page.php">
+<form action="https://formsubmit.co/amanda.doggett@stonybrook.edu" method="POST">
 
     <label for="f/lname">First/Last Name</label>
     <input type="text" id="f/lname" name="first/lastname" placeholder="Your name..">
@@ -195,10 +199,15 @@ Email, text, call. Additionally, you can fill out the form below, and submit it!
     <label for="town">Town</label>
     <input type="text" id="town" name="town" placeholder="You live in...">
 
-    <label for="">Phone Number/Email</label>
+    <label for="">Phone Number</label>
     <input type="text" id="phonenumber" name="phonenumber" placeholder="So we can reach you back! ...">
 
+    <label for="Email">Email</label>
+    <input type="text" id="email" name="phonenumber" placeholder="So we can reach you back! ...">
+
     <input type="submit" value="Submit">
+    
+<input type="hidden" name="_captcha" value="false">
 
   </form>
 </div>
