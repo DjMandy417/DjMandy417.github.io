@@ -3,7 +3,7 @@
 <head> 
 <title> The Body of Christ Club </title>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1>
+<meta name="viewport" content="width=device-width, initial-scale=1">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -78,8 +78,7 @@ input[type=submit]:hover {
 
 .container {
   max-width: 500px;
-  margin: 1 auto; 
-  margin-left: 50px; 
+  margin: 0 auto; 
   border-radius: 5px;
   background-color: #f2f2f2;
   padding: 20px;
@@ -162,24 +161,25 @@ Email, text, call. Additionally, you can fill out the form below, and submit it!
     
 <div class="form-row"> 
 <div class="form-box"> 
-    <h2> Help Request Form: </h2>
+
+<h2> Help Request Form: </h2>
 <div class="container">
 <form action="https://formsubmit.co/amanda.doggett@stonybrook.edu" method="POST">
 
-    <label for="f/lname">First/Last Name</label>
-    <input type="text" id="f/lname" name="first/lastname" placeholder="Your name.." required>
+    <label for="help-name">First/Last Name</label>
+    <input type="text" id="help-name" name="help-name" placeholder="Your name.." required>
 
-    <label for="town">Town</label>
-    <input type="text" id="town" name="town" placeholder="You live in...">
+    <label for="help-town">Town</label>
+    <input type="text" id="help-town" name="help-town" placeholder="You live in...">
 
-    <label for="Phone">Phone Number</label>
-    <input type="text" id="phonenumber" name="phonenumber" placeholder="So we can reach you back! ...">
+    <label for="help-phone">Phone Number</label>
+    <input type="text" id="help-phone" name="help-phone" placeholder="So we can reach you back! ...">
 
-    <label for="Email">Email</label>
-    <input type="text" id="email" name="email" placeholder="So we can reach you back! ...">
+    <label for="help-email">Email</label>
+    <input type="text" id="help-email" name="email" placeholder="So we can reach you back! ...">
 
-    <label for="subject">Tell us more! How can we help specifically?</label>
-    <textarea id="subject" name="subject" placeholder="~ Elevator music ~..." style="height:200px" required></textarea>
+    <label for="help-subject">Tell us more! How can we help specifically?</label>
+    <textarea id="help-subject" name="help-subject" placeholder="~ Elevator music ~..." style="height:200px" required></textarea>
 
     <input type="submit" value="Submit">
 <input type="hidden" name="_captcha" value="false">
@@ -193,17 +193,17 @@ Email, text, call. Additionally, you can fill out the form below, and submit it!
 <div class="container">
 <form action="https://formsubmit.co/amanda.doggett@stonybrook.edu" method="POST">
 
-    <label for="f/lname">First/Last Name</label>
-    <input type="text" id="f/lname" name="first/lastname" placeholder="Your name..">
+    <label for="join-name">First/Last Name</label>
+    <input type="text" id="join-name" name="join-name" placeholder="Your name.." required>
 
-    <label for="town">Town</label>
-    <input type="text" id="town" name="town" placeholder="You live in...">
+    <label for="join-town">Town</label>
+    <input type="text" id="join-town" name="join-town" placeholder="You live in...">
 
-    <label for="">Phone Number</label>
-    <input type="text" id="phonenumber" name="phonenumber" placeholder="So we can reach you back! ...">
+    <label for="join-phone">Phone Number</label>
+    <input type="text" id="join-phone" name="join-phone" placeholder="So we can reach you back! ...">
 
-    <label for="Email">Email</label>
-    <input type="text" id="email" name="phonenumber" placeholder="So we can reach you back! ...">
+    <label for="join-email">Email</label>
+    <input type="text" id="join-email" name="email" placeholder="So we can reach you back! ..." required>
 
     <input type="submit" value="Submit">
     
