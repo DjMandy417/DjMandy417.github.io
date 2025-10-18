@@ -242,6 +242,110 @@ h2 {
     padding: 20px;
   }
 
+/* Mobile version */
+@media (max-width: 768px) {
+  html, body {
+    max-width: 100%;
+    overflow-x: hidden; /* prevent horizontal scroll/white gap */
+  }
+
+  header h1 { font-size: 38px; }
+  header p { font-size: 22px; }
+
+  .navbar { flex-direction: column; }
+  .navbar a {
+    display: block;
+    width: 100%;
+    font-size: 20px;
+    padding: 14px;
+    border-bottom: 1px solid rgba(255,255,255,0.2);
+  }
+
+  .row { 
+    flex-direction: column; 
+    width: 100%;
+    padding: 0; /* ensure no extra spacing */
+    margin: 0;
+  }
+
+  .column {
+    font-size: 20px;
+    padding: 15px; /* reduce for mobile */
+    width: 100%;   /* force full width */
+    box-sizing: border-box;
+  }
+
+  .story {
+    height: auto;
+    padding: 40px 10px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .story p {
+    font-size: 19px;
+    padding: 20px 5px;
+    box-sizing: border-box;
+  }
+
+  .form-row {
+    width: 100%;
+    padding: 20px 5px;
+    box-sizing: border-box;
+  }
+
+  /* Mobile version */
+@media (max-width: 768px) {
+  html, body {
+    max-width: 100%;
+    overflow-x: hidden; /* prevent horizontal scroll/white gap */
+  }
+
+  header h1 { font-size: 38px; }
+  header p { font-size: 22px; }
+
+  .navbar { flex-direction: column; }
+  .navbar a {
+    display: block;
+    width: 100%;
+    font-size: 20px;
+    padding: 14px;
+    border-bottom: 1px solid rgba(255,255,255,0.2);
+  }
+
+  .row { 
+    flex-direction: column; 
+    width: 100%;
+    padding: 0; /* ensure no extra spacing */
+    margin: 0;
+  }
+
+  .column {
+    font-size: 20px;
+    padding: 15px; /* reduce for mobile */
+    width: 100%;   /* force full width */
+    box-sizing: border-box;
+  }
+
+  .story {
+    height: auto;
+    padding: 40px 10px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .story p {
+    font-size: 19px;
+    padding: 20px 5px;
+    box-sizing: border-box;
+  }
+
+  .form-row {
+    width: 100%;
+    padding: 20px 5px;
+    box-sizing: border-box;
+  }
+
   /* Mobile footer adjustments */
   footer { 
     flex-direction: column; 
@@ -253,6 +357,7 @@ h2 {
     width: 100% !important;
     z-index: 1000 !important;
     text-align: center;
+    box-sizing: border-box;
   }
 
   footer div {
@@ -263,14 +368,16 @@ h2 {
   }
 
   footer span, footer a {
-    color: white !important;
+    color: white !important; 
     text-decoration: none !important;
+    white-space: nowrap; /* prevent wrapping weirdly */
   }
 
   body {
     margin-bottom: 60px; /* prevent content from being hidden behind footer */
   }
 }
+  
 </style>
 
 </head>
