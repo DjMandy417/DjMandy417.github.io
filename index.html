@@ -209,6 +209,7 @@ h2 {
   4px 4px 10px rgba(0,0,0,4);
 }
 
+/* MOBILE STYLING */
 @media (max-width: 768px) {
   header h1 { font-size: 38px; }
   header p { font-size: 22px; }
@@ -246,28 +247,20 @@ h2 {
 
   footer {
     position: relative;
-    font-size: 12px;
-    padding: 6px 10px;
+    font-size: 14px;
+    padding: 10px 15px;
   }
 
   footer div {
-    display: flex;
-    justify-content: center;
+    flex-direction: column;
     gap: 5px;
+    text-align: center;
   }
 
   footer div span {
+    display: block;
     color: white;
-    display: inline;
-    font-weight: normal;
-  }
-
-  footer div span:first-child {
-    content: "Contact: ";
-  }
-
-  footer div span:nth-child(3) {
-    display: none;
+    white-space: normal;
   }
 }
 </style>
