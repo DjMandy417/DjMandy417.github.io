@@ -210,6 +210,54 @@ h2 {
   4px 4px 10px rgba(0,0,0,4);
 }
 
+/* Mobile Version */
+@media (max-width: 768px) {
+  header h1 { font-size: 38px; }
+  header p { font-size: 22px; }
+
+  .navbar {
+    flex-direction: column;
+  }
+
+  .navbar a {
+    display: block;
+    width: 100%;
+    font-size: 20px;
+    padding: 14px;
+    border-bottom: 1px solid rgba(255,255,255,0.2);
+  }
+
+  .row {
+    flex-direction: column;
+  }
+
+  .column {
+    font-size: 20px;
+    padding: 25px;
+  }
+
+  .story {
+    height: auto;
+    padding: 40px 10px;
+  }
+
+  .story p {
+    font-size: 19px;
+    padding: 20px;
+  }
+
+  footer div {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  footer {
+    font-size: 18px;
+    text-align: center;
+    padding: 20px;
+    position: relative; /* scrolls with page on mobile */
+  }
+}
 
 </style>
 
