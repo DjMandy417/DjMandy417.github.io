@@ -209,7 +209,6 @@ h2 {
   4px 4px 10px rgba(0,0,0,4);
 }
 
-/* MOBILE STYLING */
 @media (max-width: 768px) {
   header h1 { font-size: 38px; }
   header p { font-size: 22px; }
@@ -248,19 +247,25 @@ h2 {
   footer {
     position: relative;
     font-size: 14px;
-    padding: 10px 15px;
+    padding: 8px 10px;
   }
-
   footer div {
-    flex-direction: column;
-    gap: 5px;
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    gap: 0;
   }
-
   footer div span {
-    display: block;
+    display: inline;
     color: white;
-    white-space: normal;
+  }
+  footer div span:first-child {
+    font-weight: normal;
+  }
+  footer div span:nth-child(2) {
+    color: white;
+  }
+  footer div span:nth-child(3) {
+    display: none;
   }
 }
 </style>
