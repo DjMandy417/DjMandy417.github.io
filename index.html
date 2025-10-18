@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -233,7 +234,7 @@ footer span, footer a {
   text-decoration: none !important;
 }
 
-/* Mobile Version */
+/* MOBILE ADJUSTMENTS */
 @media (max-width: 768px) {
   header h1 { font-size: 38px; }
   header p { font-size: 22px; }
@@ -280,7 +281,9 @@ footer span, footer a {
     box-sizing: border-box;
   }
 
+  /* Sticky footer on mobile */
   footer {
+    position: fixed;
     bottom: 0;
     left: 0;
   }
@@ -291,7 +294,7 @@ footer span, footer a {
   }
 
   body {
-    margin-bottom: 80px; 
+    margin-bottom: 80px; /* space for sticky footer on mobile */
   }
 }
 </style>
