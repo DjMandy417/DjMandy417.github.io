@@ -244,23 +244,34 @@ h2 {
     padding: 20px;
   }
 
+  footer {
+    position: relative;
+    font-size: 12px;
+    padding: 6px 10px;
+  }
+
   footer div {
-    flex-direction: column;
+    display: flex;
+    justify-content: center;
     gap: 5px;
   }
 
-  footer {
-    position: relative;
-    font-size: 16px;
-    text-align: center;
-    padding: 10px;
+  footer div span {
+    color: white;
+    display: inline;
+    font-weight: normal;
   }
 
-  footer div span:nth-child(2) {
-    color: white;
+  footer div span:first-child {
+    content: "Contact: ";
+  }
+
+  footer div span:nth-child(3) {
+    display: none;
   }
 }
 </style>
+
 </head>
 
 <body>
