@@ -241,14 +241,20 @@ h2 {
     padding: 20px;
   }
 
-  /* Mobile footer adjustments */
-  footer { 
+  /* Mobile footer fixes */
+  footer {
+    font-size: 12px !important;      /* smaller font */
+    padding: 5px 10px !important;    /* reduce padding */
+    position: relative !important;   /* scrolls with page */
+    bottom: auto !important;         /* override fixed bottom */
+    width: 100% !important;
+  }
+
+  footer div {
     flex-direction: column !important; 
-    gap: 1px !important;      
-    font-size: 10px !important; 
-    padding: 4px 5px !important; 
-    position: relative !important; 
-    text-align: center !important;
+    gap: 5px !important;             /* reduce spacing */
+    justify-content: center !important;
+    align-items: center !important;
   }
 }
   
