@@ -11,10 +11,12 @@
 <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600&display=swap" rel="stylesheet">
 
 <style>
-html {
+html, body {
   scroll-behavior: smooth;
   max-width: 100%;
-  overflow-x: hidden; /* prevents horizontal gap */
+  overflow-x: hidden; /* prevent horizontal gap */
+  margin: 0;
+  padding: 0;
 }
 
 header {
@@ -128,11 +130,6 @@ header p {
     font-style: italic;
 }
 
-body {
-    margin: 0;
-    padding: 0;
-}
-
 .row {
     display: flex;
     width: 100%;
@@ -208,47 +205,36 @@ h2 {
   font-weight: bolder;
   color: #f0e699;
   text-shadow: 4px 4px 10px rgba(0,0,0,4),
-  4px 4px 10px rgba(0,0,0,4);
+               4px 4px 10px rgba(0,0,0,4);
 }
 
-/* Mobile version */
+/* FOOTER - default (desktop) */
+footer {
+  background-color: rgba(42, 82, 125, 0.95);
+  color: white;
+  text-align: center;
+  padding: 15px 20px;
+  width: 100%;
+  z-index: 1000;
+  position: static; /* scrolls with page on desktop */
+  box-shadow: 0 -4px 15px rgba(0,0,0,0.4);
+}
+
+footer div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  flex-wrap: wrap;
+}
+
+footer span, footer a {
+  color: white !important;
+  text-decoration: none !important;
+}
+
+/* MOBILE ADJUSTMENTS */
 @media (max-width: 768px) {
-  header h1 { font-size: 38px; }
-  header p { font-size: 22px; }
-
-  .navbar { flex-direction: column; }
-  .navbar a {
-    display: block;
-    width: 100%;
-    font-size: 20px;
-    padding: 14px;
-    border-bottom: 1px solid rgba(255,255,255,0.2);
-  }
-
-  .row { flex-direction: column; }
-
-  .column {
-    font-size: 20px;
-    padding: 25px;
-  }
-
-  .story {
-    height: auto;
-    padding: 40px 10px;
-  }
-
-  .story p {
-    font-size: 19px;
-    padding: 20px;
-  }
-
-/* Mobile version */
-@media (max-width: 768px) {
-  html, body {
-    max-width: 100%;
-    overflow-x: hidden; /* prevent horizontal scroll/white gap */
-  }
-
   header h1 { font-size: 38px; }
   header p { font-size: 22px; }
 
@@ -264,14 +250,14 @@ h2 {
   .row { 
     flex-direction: column; 
     width: 100%;
-    padding: 0; /* ensure no extra spacing */
+    padding: 0;
     margin: 0;
   }
 
   .column {
     font-size: 20px;
-    padding: 15px; /* reduce for mobile */
-    width: 100%;   /* force full width */
+    padding: 15px;
+    width: 100%;
     box-sizing: border-box;
   }
 
@@ -294,90 +280,22 @@ h2 {
     box-sizing: border-box;
   }
 
-  /* Mobile version */
-@media (max-width: 768px) {
-  html, body {
-    max-width: 100%;
-    overflow-x: hidden; /* prevent horizontal scroll/white gap */
-  }
-
-  header h1 { font-size: 38px; }
-  header p { font-size: 22px; }
-
-  .navbar { flex-direction: column; }
-  .navbar a {
-    display: block;
-    width: 100%;
-    font-size: 20px;
-    padding: 14px;
-    border-bottom: 1px solid rgba(255,255,255,0.2);
-  }
-
-  .row { 
-    flex-direction: column; 
-    width: 100%;
-    padding: 0; /* ensure no extra spacing */
-    margin: 0;
-  }
-
-  .column {
-    font-size: 20px;
-    padding: 15px; /* reduce for mobile */
-    width: 100%;   /* force full width */
-    box-sizing: border-box;
-  }
-
-  .story {
-    height: auto;
-    padding: 40px 10px;
-    width: 100%;
-    box-sizing: border-box;
-  }
-
-  .story p {
-    font-size: 19px;
-    padding: 20px 5px;
-    box-sizing: border-box;
-  }
-
-  .form-row {
-    width: 100%;
-    padding: 20px 5px;
-    box-sizing: border-box;
-  }
-
-  /* Mobile footer adjustments */
-  footer { 
-    flex-direction: column; 
-    gap: 3px;
-    font-size: 12px !important; 
-    padding: 5px 10px !important; 
-    position: fixed !important;
-    bottom: 0 !important;
-    width: 100% !important;
-    z-index: 1000 !important;
-    text-align: center;
-    box-sizing: border-box;
+  /* Sticky footer on mobile */
+  footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
   }
 
   footer div {
-    flex-direction: column !important;
-    gap: 3px !important;
-    justify-content: center !important;
-    align-items: center !important;
-  }
-
-  footer span, footer a {
-    color: white !important; 
-    text-decoration: none !important;
-    white-space: nowrap; /* prevent wrapping weirdly */
+    flex-direction: column;
+    gap: 5px;
   }
 
   body {
-    margin-bottom: 60px; /* prevent content from being hidden behind footer */
+    margin-bottom: 80px; /* space for sticky footer on mobile */
   }
 }
-  
 </style>
 
 </head>
@@ -466,20 +384,10 @@ h2 {
     </div>
   </div>
 
-<footer style="
-    background-color: rgba(42, 82, 125, 0.95); 
-    color: white; 
-    font-family:'Modern Antiqua', serif; 
-    font-size: 20px;
-    padding:15px 20px; 
-    position: fixed; 
-    bottom: 0; 
-    left: 0; 
-    width: 100%;
-    box-shadow: 0 -4px 15px rgba(0,0,0,0.4); 
-    z-index: 1000;
-">
-  <div style="display:flex; justify-content:center; align-items:center; gap:50px; white-space:nowrap;">
+</div>
+
+<footer>
+  <div>
     <span style="font-weight:bold; text-shadow:1px 1px 3px rgba(0,0,0,0.7);">Contact Me: Rita Doggett</span>
     <span style="text-shadow:1px 1px 3px rgba(0,0,0,0.7);">908-403-3204</span>
     <span style="text-shadow:1px 1px 3px rgba(0,0,0,0.7);">Thebodyofchristclub@gmail.com</span>
@@ -488,6 +396,3 @@ h2 {
 
 </body>
 </html>
-
-
-
