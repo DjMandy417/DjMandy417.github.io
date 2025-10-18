@@ -31,7 +31,6 @@ header {
     background-image: 
         linear-gradient(rgba(43, 54, 50, 0.5), rgba(43, 54, 50, 0.5)), 
         url('flowers2.jpg');
-
 }
 
 header h1 {
@@ -44,7 +43,7 @@ header h1 {
         2px 2px 4px rgba(0,0,0,0.9),
         4px 4px 8px rgba(0,0,0,0.9),
         6px 6px 12px rgba(0,0,0,0.9),
-        0 0 5px rgba(240, 230, 150, 0.3); /* subtle yellow glow */
+        0 0 5px rgba(240, 230, 150, 0.3);
 }
 
 header p {
@@ -56,7 +55,7 @@ header p {
         2px 2px 4px rgba(0,0,0,0.9),
         4px 4px 8px rgba(0,0,0,0.9),
         6px 6px 12px rgba(0,0,0,0.9),
-        0 0 4px rgba(240, 230, 150, 0.25); /* subtle yellow glow */
+        0 0 4px rgba(240, 230, 150, 0.25);
     margin: 0;
 }
 
@@ -210,7 +209,7 @@ h2 {
   4px 4px 10px rgba(0,0,0,4);
 }
 
-/* Mobile Version */
+/* --- Mobile Version --- */
 @media (max-width: 768px) {
   header h1 { font-size: 38px; }
   header p { font-size: 22px; }
@@ -248,127 +247,16 @@ h2 {
 
   footer div {
     flex-direction: column;
-    gap: 10px;
+    gap: 8px;
   }
 
   footer {
-    font-size: 15px;
+    font-size: 14px;
     text-align: center;
     padding: 10px;
-    position: fixed; /* scrolls with page on mobile */
+    position: relative; /* scrolls with page on mobile */
   }
 }
 
 </style>
-
 </head>
-
-<body>
-
-<header> 
-    <h1>The Body of Christ Club</h1>
-    <p>Church of St. Anne, Garwood, NJ</p>
-</header>
-
-<div class="navbar">
-  <a href="#help-form">Request Help</a>
-  <a href="#join-form">Volunteer</a>
-</div>
-
-<div class="story">
-    <p>"When I was in my 30s, I fell ill and needed emergency surgery. However, I had 3 children all under the age of 8. Ladies from my young mothers group helped me while I was incapacitated; when my husband had to work, one of the ladies even cared for my children overnight, so I could rest. <br><br> At the end of the week, I asked them, <span class="highlight">'Why have you have done so much for me?'</span> They said, <span class="highlight">'We are the Body of Christ on Earth. How could we do any less?'</span> I never forgot those words. Being a follower of Christ is not simply believing. It is acting on those beliefs. When others cannot, we can with Christ's guidance and help."</p>
-</div>
-
-<div class="row">
-  <div class="column" style="background-color:#4b7099;">
-    <div>
-      <strong>What does the club do?</strong><br><br>
-      We are a service club. We find out the needs of the people in our area and we try to meet them.
-    </div>
-  </div>
-
-  <div class="column" style="background-color:#557eab;">
-    <div>
-      <strong>What services do we offer?</strong><br><br>
-      Our services include emergency meals, rides, running errands, check-ins, small emergency repairs, laundry, and more. If you have a need, just ask.
-    </div>
-  </div>
-
-  <div class="column" style="background-color:#4b7099;">
-    <div>
-      <strong>How can people get involved?</strong><br><br>
-      You can register on our schedule to be called when a need arises. Meetings will be listed on the website as soon as we have a schedule.
-    </div>
-  </div>
-</div>
-
-<div class="form-row" style="background-image: 
-        linear-gradient(rgba(43, 54, 50, 0.3), rgba(43, 54, 50, 0.3)), 
-        url('flowers2.jpg'); background-size: cover; background-position: center; padding: 60px 20px;">
-
-  <div class="form-box" id="help-form">
-    <div style="background-color: rgba(0, 0, 0, 0.4); padding: 20px; border-radius: 10px;">
-      <h2>Help Request Form:</h2>
-      <div class="container">
-        <form action="https://formsubmit.co/doggett.rita@gmail.com" method="POST">
-          <label for="help-name">First/Last Name</label>
-          <input type="text" id="help-name" name="help-name" placeholder="Your name.." required>
-          <label for="help-town">Town</label>
-          <input type="text" id="help-town" name="help-town" placeholder="You live in...">
-          <label for="help-phone">(Optional) Phone Number</label>
-          <input type="text" id="help-phone" name="help-phone" placeholder="So we can reach you back! ...">
-          <label for="help-email">Email</label>
-          <input type="text" id="help-email" name="email" placeholder="So we can reach you back! ..." required>
-          <label for="help-subject">Tell us more! How can we help specifically?</label>
-          <textarea id="help-subject" name="help-subject" placeholder="~ Elevator music ~..." style="height:200px" required></textarea>
-          <input type="submit" value="Submit">
-          <input type="hidden" name="_captcha" value="false">
-        </form>
-      </div>
-    </div>
-  </div>
-
-  <div class="form-box" id="join-form">
-    <div style="background-color: rgba(0, 0, 0, 0.4); padding: 20px; border-radius: 20px;">
-      <h2>Join Our Club:</h2>
-      <div class="container">
-        <form action="https://formsubmit.co/doggett.rita@gmail.com" method="POST">
-          <label for="join-name">First/Last Name</label>
-          <input type="text" id="join-name" name="join-name" placeholder="Your name.." required>
-          <label for="join-town">Town</label>
-          <input type="text" id="join-town" name="join-town" placeholder="You live in...">
-          <label for="join-phone">(Optional) Phone Number</label>
-          <input type="text" id="join-phone" name="join-phone" placeholder="So we can reach you back! ...">
-          <label for="join-email">Email</label>
-          <input type="text" id="join-email" name="email" placeholder="So we can reach you back! ..." required>
-          <input type="submit" value="Submit">
-          <input type="hidden" name="_captcha" value="false">
-        </form>
-      </div>
-    </div>
-  </div>
-
-<footer style="
-    background-color: rgba(42, 82, 125, 0.95); /* semi-transparent navbar color */
-    color: white; 
-    font-family:'Modern Antiqua', serif; 
-    font-size: 20px;
-    padding:15px 20px; 
-    position: fixed; 
-    bottom: 0; 
-    left: 0; 
-    width: 100%;
-    box-shadow: 0 -4px 15px rgba(0,0,0,0.4); /* subtle shadow above footer */
-    z-index: 1000;
-">
-  <div style="display:flex; justify-content:center; align-items:center; gap:50px; white-space:nowrap;">
-    <span style="font-weight:bold; text-shadow:1px 1px 3px rgba(0,0,0,0.7);">Contact Me: Rita Doggett</span>
-    <span style="text-shadow:1px 1px 3px rgba(0,0,0,0.7);">908-403-3204</span>
-    <span style="text-shadow:1px 1px 3px rgba(0,0,0,0.7);">Thebodyofchristclub@gmail.com</span>
-  </div>
-</footer>
-
-</div>
-
-</body>
-</html>
