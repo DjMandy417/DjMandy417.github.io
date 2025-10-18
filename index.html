@@ -2,36 +2,33 @@
 <html lang="en">
 <head>
 <title> The Body of Christ Club </title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 
 <style>
 
 header {
-    background-color: white;
+    background: gray;
     text-align: center;
-    padding: 10px;
+    padding: 60px;
+    color: black;
 }
 
 /* Navigation Bar */
 
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    background-color: #333;
-    border: 1px solid #e7e7e7;
-    display: flex; 
-    justify-content: center;
-}
-
-ul li a {
-    display: block;
+.navbar {
+   display: flex;
+   background-color: #333;
+.navbar a {
     color: white;
     padding: 14px 16px;
-    text-decoration: none;
+    text-decoration none;
+    text-align: center;
 }
 
-ul li a:hover {
+.navbar a:hover {
     background-color: green;
+    color: black;
 }
 
 </style>
@@ -45,11 +42,11 @@ ul li a:hover {
 
 </header>
 
-<ul>
-    <li><a> Home </a></li>
-    <li><a> Request Form </a></li>
-    <li><a> Join Our Club Form </a></li>
-</ul>
+<div class="navbar">
+    <a href="#"> Home </a>
+    <a href="#"> Request Form </a>
+    <a href="#"> Join Our Club Form </a>
+</div>
 
 </body>
 
